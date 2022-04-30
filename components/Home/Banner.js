@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
-import { IoPlaySharp } from 'react-icons/io5'
+import { BsSun } from 'react-icons/bs'
 import { FiGithub } from 'react-icons/fi'
 
 const Banner = () => {
@@ -23,13 +23,13 @@ const Banner = () => {
                     </div>
                     <div>
                         <h3 className='text-white text-5xl font-bold'>{'Timilehin'}</h3>
-                        <h3 className='text-white text-4xl font-bold'>{'<Self-taught Frontend Dev />.'}</h3>
+                        <h3 className='text-white blur hover:blur-0 text-4xl font-bold'>{'<Self-taught Frontend Dev />.'}</h3>
                     </div>
                     <h5 className='text-[#A9A7A9] text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
                     <div className='flex items-center space-x-6'>
-                        <button className='border-2 border-[#fe4957] bg-[#1e2235] px-5 py-2 rounded-full text-white'>Download CV</button>
+                        <a href='https://drive.google.com/file/d/1BEeHtgWtMkKU1QdtSTj1sIodeNWgw2Pe/view?usp=sharing' target='_blank' className='border-2 border-[#fe4957] bg-[#1e2235] px-5 py-2 rounded-full text-white'>Download CV</a>
                         <button className='bg-[#fe4957] px-8 py-3 rounded-full text-white'>
-                            <IoPlaySharp className='h-6 w-6' />
+                            <BsSun className='h-6 w-6' />
                         </button>
                     </div>
                 </div>
