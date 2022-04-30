@@ -5,6 +5,7 @@ import Head from 'next/head'
 import Header from '../components/General/Header'
 import { useRouter } from 'next/router'
 import { ThemeProvider } from 'next-themes'
+import { useEffect } from 'react'
 
 mixpanel.init('93746caede71325de1d6ca811f9e4c16', { debug: true })
 
@@ -18,6 +19,10 @@ function MyApp({ Component, pageProps }) {
     stiffness: 200,
     when: 'afterChildren'
   }
+
+  useEffect(() => {
+    mixpanel.track('app opened')
+  }, [])
 
   return (
     <AnimatePresence exitBeforeEnter>

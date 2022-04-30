@@ -22,7 +22,7 @@ const Header = () => {
                             <li><Link href='/'>Home</Link></li>
                             <li><Link href='/projects'>Projects</Link></li>
                             <li><Link href='/blog'>Blog</Link></li>
-                            <li><Link href='/contact'>Contact</Link></li>
+                            {/* <li><Link href='/contact'>Contact</Link></li> */}
                             <RiDoorClosedLine className='text-black dark:text-white h-6 w-6 cursor-pointer' onClick={handleToggle} />
                         </ul>
                 }

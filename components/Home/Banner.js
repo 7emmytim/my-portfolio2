@@ -1,6 +1,6 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 import { BsMoonFill, BsSun } from 'react-icons/bs'
-import { FiGithub } from 'react-icons/fi'
+import { FiGithub, FiMail } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
@@ -86,6 +86,9 @@ const Banner = () => {
                         <a href='https://web.facebook.com/timilehin.omotugba/' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
                             <FaFacebookF className='h-4 w-4 text-white' />
                         </a>
+                        <a href='mailto:omotugbatimilehin7@gmail.com' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
+                            <FiMail className='h-4 w-4 text-white' />
+                        </a>
                     </div>
                     <div className='space-y-4 sm:space-y-0'>
                         <motion.h3
@@ -105,7 +108,7 @@ const Banner = () => {
                                 );
                             })}
                         </motion.h3>
-                        <h3 className='text-black dark:text-white hover:blur-0 text-4xl font-bold'>{'<Self-taught Frontend Dev />.'}</h3>
+                        <h3 className='text-black dark:text-white blur-sm hover:blur-0 text-4xl font-bold'>{'<Self-taught Frontend Dev />.'}</h3>
                     </div>
                     <h5 className='text-[#A9A7A9] text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
                     <div className='block sm:flex items-center space-y-6 sm:space-y-0 space-x-6'>
@@ -117,7 +120,7 @@ const Banner = () => {
                             variants={buttonVariants}
                             whileHover='hover'
                             className='bg-[#fe4957] px-8 py-3 rounded-full text-white'>
-                                {renderThemeChanger()}
+                            {renderThemeChanger()}
                         </motion.button>
                     </div>
                 </div>
