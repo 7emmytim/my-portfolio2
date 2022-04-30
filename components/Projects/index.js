@@ -13,8 +13,8 @@ const Projects = () => {
     ]
 
     return (
-        <div className='bg-[#242639]'>
-            <div className='container h-screen flex items-center py-20 w-2/3'>
+        <div className='bg-gray-200 dark:bg-[#242639]'>
+            <div className='container min-h-screen sm:flex items-center py-20 w-2/3'>
                 <div>
                     <h3 className='text-[#fe4957] text-2xl font-bold'>{'< Projects />'}</h3>
                     <div className='lg:flex lg:flex-wrap gap-11 items-center justify-center w-full mt-10'>
@@ -36,8 +36,8 @@ const Projects = () => {
                                             </div>
                                         </div>
                                         <div className='px-2'>
-                                            <p className='focus:outline-none text-sm leading-5 py-4 text-gray-600 truncate'>A group of people interested in dogecoin, the currency and a bit of side for the meme and dof that we all know and love. These cases are perfectly simple and easy to distinguish.</p>
-                                            <div className='focus:outline-none flex gap-3'>
+                                            {/* <p className='focus:outline-none text-sm leading-5 py-4 text-gray-600 truncate'>A group of people interested in dogecoin, the currency and a bit of side for the meme and dof that we all know and love. These cases are perfectly simple and easy to distinguish.</p> */}
+                                            <div className='focus:outline-none flex gap-3 pt-6'>
                                                 {
                                                     project.techs.map(item => <div key={item} className='py-2 px-4 text-xs leading-3 text-indigo-700 rounded-full bg-indigo-100'>#{item}</div>)
                                                 }

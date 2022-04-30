@@ -5,7 +5,7 @@ const Contact = () => {
         <h3 className='text-[#fe4957] text-2xl font-bold text-left'>{'< Contact />'}</h3>
         <div>
 
-          <h4 className='text-white text-4xl'>Coming soon...</h4>
+          <h4 className='text-black dark:text-white text-4xl'>Coming soon...</h4>
 
         </div>
       </div>

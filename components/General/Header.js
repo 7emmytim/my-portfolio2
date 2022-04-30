@@ -12,18 +12,18 @@ const Header = () => {
     return (
         <div className='py-6 fixed top-0 w-full z-20 bg-transparent'>
             <div className='container flex items-center justify-between w-2/3'>
-                <h4 className='text-white'>
+                <h4 className='text-black dark:text-white'>
                     <Link href='/'>{`<tsx />`}</Link>
                 </h4>
                 {
-                    expanded ? <BiDoorOpen className='text-white h-6 w-6 cursor-pointer' onClick={handleToggle} />
+                    expanded ? <BiDoorOpen className='text-black dark:text-white h-6 w-6 cursor-pointer' onClick={handleToggle} />
                         :
-                        <ul className='flex items-center gap-8 text-white'>
+                        <ul className='flex items-center gap-8 text-black dark:text-white'>
                             <li><Link href='/'>Home</Link></li>
                             <li><Link href='/projects'>Projects</Link></li>
                             <li><Link href='/blog'>Blog</Link></li>
                             <li><Link href='/contact'>Contact</Link></li>
-                            <RiDoorClosedLine className='text-white h-6 w-6 cursor-pointer' onClick={handleToggle} />
+                            <RiDoorClosedLine className='text-black dark:text-white h-6 w-6 cursor-pointer' onClick={handleToggle} />
                         </ul>
                 }
             </div>

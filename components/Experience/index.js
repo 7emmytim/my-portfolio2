@@ -5,7 +5,7 @@ import { RiCodeSSlashFill } from 'react-icons/ri'
 
 const Experience = () => {
     return (
-        <div className='h-screen py-20 flex flex-col justify-center sm:py-12 overflow-auto'>
+        <div className='min-h-screen py-20 sm:flex flex-col justify-center sm:py-12 overflow-auto'>
             <div className='container w-2/3'>
                 <h3 className='text-[#fe4957] text-2xl font-bold'>{'< Experience />'}</h3>
                 <div className='py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0 mt-10'>
