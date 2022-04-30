@@ -4,22 +4,22 @@ import { FiGithub } from 'react-icons/fi'
 
 const Banner = () => {
     return (
-        <div className='bg-[#242639] h-full'>
+        <div className='bg-[#242639] h-screen flex items-center'>
             <div className='container grid grid-cols-2 py-20 w-2/3 items-center'>
                 <div className='space-y-8'>
                     <div className='flex items-center gap-4'>
-                        <div className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
+                        <a href='https://www.linkedin.com/in/timilehin-omotugba-b551b5174/' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
                             <FaLinkedinIn className='h-4 w-4 text-white' />
-                        </div>
-                        <div className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
+                        </a>
+                        <a href='https://github.com/7emmytim' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
                             <FiGithub className='h-4 w-4 text-white' />
-                        </div>
-                        <div className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
+                        </a>
+                        <a href='https://www.instagram.com/7emmytim/' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
                             <FaInstagram className='h-4 w-4 text-white' />
-                        </div>
-                        <div className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
+                        </a>
+                        <a href='https://web.facebook.com/timilehin.omotugba/' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
                             <FaFacebookF className='h-4 w-4 text-white' />
-                        </div>
+                        </a>
                     </div>
                     <div>
                         <h3 className='text-white text-5xl font-bold'>{'Timilehin'}</h3>

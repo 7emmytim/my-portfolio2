@@ -1,4 +1,4 @@
-import { SiAntdesign, SiBitbucket, SiFirebase, SiFramer, SiGithub, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiRedux, SiSass, SiStrapi, SiStyledcomponents, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import { SiAntdesign, SiBitbucket, SiCss3, SiFirebase, SiFramer, SiGithub, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiRedux, SiSass, SiStrapi, SiStyledcomponents, SiTailwindcss, SiTypescript } from 'react-icons/si'
 
 const Skills = () => {
 
@@ -10,6 +10,7 @@ const Skills = () => {
         { text: 'Next JS', icon: <SiNextdotjs className='w-full h-28' /> },
         { text: 'Antd', icon: <SiAntdesign className='w-full h-28' /> },
         { text: 'Tailwind', icon: <SiTailwindcss className='w-full h-28' /> },
+        { text: 'CSS3', icon: <SiCss3 className='w-full h-28' /> },
         { text: 'Firebase', icon: <SiFirebase className='w-full h-28' /> },
         { text: 'Styled Components', icon: <SiStyledcomponents className='w-full h-28' /> },
         { text: 'Strapi', icon: <SiStrapi className='w-full h-28' /> },
@@ -21,7 +22,7 @@ const Skills = () => {
     ]
 
     return (
-        <div className='container h-screen mx-auto text-center flex items-center justify-between w-2/3'>
+        <div className='container mx-auto text-center flex items-center justify-between w-2/3 py-20 h-screen'>
             <div className='text-center mx-auto'>
                 <h3 className='text-[#fe4957] text-2xl font-bold text-left'>{'< Skills />'}</h3>
                 <div className='flex flex-wrap justify-center gap-8 mt-10'>
