@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
   }
 
   useEffect(() => {
-    mixpanel.track('app opened')
+    window.location.hostname !== 'localhost' && mixpanel.track('APP_OPENED')
   }, [])
 
   return (

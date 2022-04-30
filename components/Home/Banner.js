@@ -4,6 +4,7 @@ import { FiGithub, FiMail } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
+import mixpanel from 'mixpanel-browser'
 
 const buttonVariants = {
     hover: {
@@ -69,6 +70,8 @@ const Banner = () => {
         }
     }
 
+    const handleMixpanelFn = () => mixpanel.track('CV_DOWNLOADED')
+
     return (
         <div className='bg-white dark:bg-[#242639] min-h-screen sm:flex py-32 sm:py-20 items-center'>
             <div className='container grid sm:grid-cols-2 gap-10 w-2/3 items-center'>
@@ -113,6 +116,7 @@ const Banner = () => {
                     <h5 className='text-[#A9A7A9] text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
                     <div className='block sm:flex items-center space-y-6 sm:space-y-0 space-x-6'>
                         <motion.a
+                        onClick={handleMixpanelFn}
                             variants={buttonVariants}
                             whileHover='hover'
                             href='/cv_timilehin.pdf' target='_blank' className='border-2 border-[#fe4957] bg-[#1e2235] px-5 py-2 rounded-full text-white'>Download CV</motion.a>
@@ -120,7 +124,7 @@ const Banner = () => {
                             variants={buttonVariants}
                             whileHover='hover'
                             className='bg-[#fe4957] px-8 py-3 rounded-full text-white'>
-                            {renderThemeChanger()}
+                                {renderThemeChanger()}
                         </motion.button>
                     </div>
                 </div>
