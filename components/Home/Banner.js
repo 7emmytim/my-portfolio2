@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import mixpanel from 'mixpanel-browser'
+import { _social_media } from '../../resources/social'
 
 const buttonVariants = {
     hover: {
@@ -65,7 +66,7 @@ const Banner = () => {
 
         else {
             return (
-                <BsMoonFill className='w-6 h-6' role='button' onClick={() => setTheme('dark')} />
+                <BsMoonFill className='w-6 h-6 text-[#fe4957]' role='button' onClick={() => setTheme('dark')} />
             )
         }
     }
@@ -76,29 +77,21 @@ const Banner = () => {
         <div className='bg-white dark:bg-[#242639] min-h-screen sm:flex py-32 sm:py-20 items-center'>
             <div className='container grid sm:grid-cols-2 gap-10 w-2/3 items-center'>
                 <div className='space-y-8'>
-                    <div className='flex items-center gap-4'>
-                        <a href='https://www.linkedin.com/in/timilehin-omotugba-b551b5174/' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
-                            <FaLinkedinIn className='h-4 w-4 text-white' />
-                        </a>
-                        <a href='https://github.com/7emmytim' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
-                            <FiGithub className='h-4 w-4 text-white' />
-                        </a>
-                        <a href='https://www.instagram.com/7emmytim/' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
-                            <FaInstagram className='h-4 w-4 text-white' />
-                        </a>
-                        <a href='https://web.facebook.com/timilehin.omotugba/' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
-                            <FaFacebookF className='h-4 w-4 text-white' />
-                        </a>
-                        <a href='mailto:omotugbatimilehin7@gmail.com' target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-3'>
-                            <FiMail className='h-4 w-4 text-white' />
-                        </a>
+                    <div className='flex items-center gap-2 sm:gap-4'>
+                        {_social_media.map(item => {
+                            return (
+                                <a key={item.link} href={item.link} target='_blank' className='rounded-full border-2 border-[#fe4957] bg-[#1e2235] p-1 sm:p-2 lg:p-3'>
+                                    {item.icon}
+                                </a>
+                            )
+                        })}
                     </div>
-                    <div className='space-y-4 sm:space-y-0'>
+                    <div className=''>
                         <motion.h3
                             variants={container}
                             initial='hidden'
                             animate='show'
-                            className='text-black dark:text-white text-5xl font-bold'>
+                            className='text-black dark:text-white text-2xl sm:text-3xl lg:text-5xl font-bold'>
                             {'Timilehin'.split('').map((l, i) => {
                                 return (
                                     <motion.span
@@ -111,20 +104,20 @@ const Banner = () => {
                                 );
                             })}
                         </motion.h3>
-                        <h3 className='text-black dark:text-white blur-sm hover:blur-0 text-4xl font-bold'>{'<Self-taught Frontend Dev />.'}</h3>
+                        <h3 className='text-black dark:text-white blur-sm hover:blur-0 text-xl sm:text-2xl lg:text-4xl font-bold'>{'<Self-taught Frontend Dev />.'}</h3>
                     </div>
-                    <h5 className='text-[#A9A7A9] text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-                    <div className='block sm:flex items-center space-y-6 sm:space-y-0 space-x-6'>
+                    <h5 className='text-[#A9A7A9] text-base sm:text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+                    <div className='flex items-center space-x-2 sm:space-x-6'>
                         <motion.a
-                        onClick={handleMixpanelFn}
+                            onClick={handleMixpanelFn}
                             variants={buttonVariants}
                             whileHover='hover'
-                            href='/cv_timilehin.pdf' target='_blank' className='border-2 border-[#fe4957] bg-[#1e2235] px-5 py-2 rounded-full text-white'>Download CV</motion.a>
+                            href='/cv_timilehin.pdf' target='_blank' className='border-2 border-[#fe4957] bg-[#1e2235] text-xs sm:text-base px-5 py-2 rounded-full text-white'>Download CV</motion.a>
                         <motion.button
                             variants={buttonVariants}
                             whileHover='hover'
-                            className='bg-[#fe4957] px-8 py-3 rounded-full text-white'>
-                                {renderThemeChanger()}
+                            className='md:bg-[#fe4957] md:px-8 md:py-3 rounded-full text-white'>
+                            {renderThemeChanger()}
                         </motion.button>
                     </div>
                 </div>
