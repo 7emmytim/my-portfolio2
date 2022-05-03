@@ -1,10 +1,12 @@
 import Blog from '../components/Blog'
+import ComingSoon from '../components/General/ComingSoon'
 
 const blog = () => {
   return (
-      <section>
-        <Blog />
-      </section>
+    <section>
+      <ComingSoon />
+      {/* <Blog /> */}
+    </section>
   )
 }
 

@@ -5,13 +5,15 @@ import Head from 'next/head'
 import Header from '../components/General/Header'
 import { useRouter } from 'next/router'
 import { ThemeProvider } from 'next-themes'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import Loading from '../components/General/Loading'
 
 mixpanel.init('93746caede71325de1d6ca811f9e4c16', { debug: true })
 
 function MyApp({ Component, pageProps }) {
 
   const router = useRouter()
+  const [loading, setLoading] = useState(false)
 
   const spring = {
     type: 'spring',
@@ -22,6 +24,20 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     window.location.hostname !== 'localhost' && mixpanel.track('APP_OPENED')
+  }, [])
+
+  useEffect(() => {
+    const handleRouteChange = () => setLoading(true)
+
+    const handleRouteComplete = () => setLoading(false)
+
+    router.events.on('routeChangeStart', handleRouteChange)
+    router.events.on('routeChangeComplete', handleRouteComplete)
+
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange)
+      router.events.off('routeChangeComplete', handleRouteComplete)
+    }
   }, [])
 
   return (
@@ -41,7 +57,7 @@ function MyApp({ Component, pageProps }) {
           exit={{ x: -300, opacity: 0 }}
         >
           <ThemeProvider enableSystem={true} attribute='class'>
-            <Component {...pageProps} key={router.pathname} />
+            {loading ? <Loading /> : <Component {...pageProps} key={router.pathname} />}
           </ThemeProvider>
         </motion.main>
       </div>
