@@ -1,12 +1,12 @@
 import { VscLinkExternal } from 'react-icons/vsc'
-import { GiNotebook } from 'react-icons/gi'
+import {AiOutlineTransaction} from 'react-icons/ai'
 import { BsCart4 } from 'react-icons/bs'
 import { MdQrCode2, MdQuiz } from 'react-icons/md'
 
 const Projects = () => {
 
     const _projects = [
-        { name: 'notepad', icon: <GiNotebook className='w-12 h-12 text-green-400' />, link: 'https://notepad-clone.web.app/', techs: ['reactjs', 'redux'] },
+        { name: 'comx trading app', icon: <AiOutlineTransaction className='w-12 h-12 text-red-400' />, link: 'https://comx.afexnigeria.com/', techs: ['reactjs', 'antd'] },
         { name: 'shopping cart', icon: <BsCart4 className='w-12 h-12 text-yellow-400' />, link: 'https://hungry-beaver-3b770e.netlify.app/', techs: ['nextjs', 'tailwindcss'] },
         { name: 'qr pay', icon: <MdQrCode2 className='w-12 h-12 text-gray-400' />, link: 'https://qrcode-app-dev.firebaseapp.com/', techs: ['reactjs', 'firebase'] },
         { name: 'flag quiz', icon: <MdQuiz className='w-12 h-12 text-blue-400' />, link: 'https://flagquiz-app.web.app/', techs: ['reactjs', 'bootstrap'] }
@@ -17,7 +17,7 @@ const Projects = () => {
             <div className='container min-h-screen sm:flex items-center py-20 w-2/3'>
                 <div className='w-full'>
                     <h3 className='text-[#fe4957] text-2xl font-bold'>{'< Projects />'}</h3>
-                    <div className='grid sm:grid-cols-2 gap-6 w-full lg:w-2/3 mx-auto mt-10'>
+                    <div className='sm:grid sm:grid-cols-2 space-y-6 sm:space-y-0 gap-6 w-full lg:w-2/3 mx-auto mt-10'>
                         {
                             _projects.map(project => {
                                 return (

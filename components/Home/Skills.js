@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { BsArrowRight } from 'react-icons/bs'
+import { HiOutlineArrowCircleRight } from 'react-icons/hi'
 
 const Skills = ({ skills, showMore }) => {
     return (
@@ -22,9 +22,9 @@ const Skills = ({ skills, showMore }) => {
                     showMore &&
                     <div className='mt-10'>
                         <Link href='/skills'>
-                            <span className='text-[#fe4957] dark:text-yellow-300 text-base cursor-pointer flex items-center gap-3'>
+                            <span className='text-[#fe4957] dark:text-[#64ffda] text-sm cursor-pointer flex items-center gap-2'>
                                 <span>SEE MORE</span>
-                                <BsArrowRight />
+                                <HiOutlineArrowCircleRight />
                             </span>
                         </Link>
                     </div>

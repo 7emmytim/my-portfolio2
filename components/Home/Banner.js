@@ -12,7 +12,7 @@ const buttonVariants = {
         boxShadow: '0px 0px 8px rgb(255,255,255)',
         transition: {
             duration: 0.3,
-            yoyo: Infinity
+            repeat: Infinity
         }
     }
 }
@@ -58,13 +58,13 @@ const Banner = () => {
 
         if (currentTheme === 'dark') {
             return (
-                <BsSun className='w-6 h-6' role='button' onClick={() => setTheme('light')} />
+                <BsSun className='w-6 h-6' onClick={() => setTheme('light')} />
             )
         }
 
         else {
             return (
-                <BsMoonFill className='w-6 h-6 dark:text-[#fe4957]' role='button' onClick={() => setTheme('dark')} />
+                <BsMoonFill className='w-6 h-6 dark:text-[#fe4957]' onClick={() => setTheme('dark')} />
             )
         }
     }
@@ -114,7 +114,7 @@ const Banner = () => {
                         <motion.button
                             variants={buttonVariants}
                             whileHover='hover'
-                            className='md:bg-[#fe4957] md:px-8 md:py-3 rounded-full text-white'>
+                            className='md:bg-[#fe4957] md:px-8 md:py-3 rounded-full md:text-white text-[#fe4957] dark:text-white'>
                             {renderThemeChanger()}
                         </motion.button>
                     </div>
