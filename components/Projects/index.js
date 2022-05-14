@@ -7,7 +7,7 @@ const Projects = () => {
 
     const _projects = [
         { name: 'comx trading app', icon: <img src='/x.png' className='h-12 w-12' />, link: 'https://comx.afexnigeria.com/', techs: ['reactjs', 'antd'] },
-        { name: 'food app', icon: <IoFastFoodOutline className='w-12 h-12 text-yellow-400' />, link: 'https://my-food-web-app.netlify.app/', techs: ['reactjs', 'tailwindcss'] },
+        { name: 'food app', icon: <IoFastFoodOutline className='w-12 h-12 text-yellow-400' />, link: 'https://foodie-appie.netlify.app/', techs: ['reactjs', 'tailwindcss'] },
         { name: 'qr pay', icon: <MdQrCode2 className='w-12 h-12 text-gray-400' />, link: 'https://qrcode-app-dev.firebaseapp.com/', techs: ['reactjs', 'firebase'] },
         { name: 'shopping cart', icon: <BsCart4 className='w-12 h-12 text-purple-400' />, link: 'https://hungry-beaver-3b770e.netlify.app/', techs: ['nextjs', 'tailwindcss'] },
 
