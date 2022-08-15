@@ -7,9 +7,9 @@ const Projects = () => {
 
     const _projects = [
         { name: 'comx trading app', icon: <img src='/x.png' className='h-12 w-12' />, link: 'https://comx.afexnigeria.com/', techs: ['reactjs', 'antd'] },
-        { name: 'food app', icon: <IoFastFoodOutline className='w-12 h-12 text-yellow-400' />, link: 'https://foodie-appie.netlify.app/', techs: ['reactjs', 'tailwindcss'] },
-        { name: 'qr pay', icon: <MdQrCode2 className='w-12 h-12 text-gray-400' />, link: 'https://qrcode-app-dev.firebaseapp.com/', techs: ['reactjs', 'firebase'] },
-        { name: 'shopping cart', icon: <BsCart4 className='w-12 h-12 text-purple-400' />, link: 'https://hungry-beaver-3b770e.netlify.app/', techs: ['nextjs', 'tailwindcss'] },
+        // { name: 'food app', icon: <IoFastFoodOutline className='w-12 h-12 text-yellow-400' />, link: 'https://foodie-appie.netlify.app/', techs: ['reactjs', 'tailwindcss'] },
+        // { name: 'qr pay', icon: <MdQrCode2 className='w-12 h-12 text-gray-400' />, link: 'https://qrcode-app-dev.firebaseapp.com/', techs: ['reactjs', 'firebase'] },
+        // { name: 'shopping cart', icon: <BsCart4 className='w-12 h-12 text-purple-400' />, link: 'https://hungry-beaver-3b770e.netlify.app/', techs: ['nextjs', 'tailwindcss'] },
 
     ]
 
@@ -18,6 +18,7 @@ const Projects = () => {
             <div className='container min-h-screen sm:flex items-center py-20 w-2/3'>
                 <div className='w-full'>
                     <h3 className='text-[#fe4957] text-2xl font-bold'>{'< Projects />'}</h3>
+                    
                     <div className='sm:grid sm:grid-cols-2 space-y-6 sm:space-y-0 gap-6 w-full lg:w-2/3 mx-auto mt-10'>
                         {
                             _projects.map(project => {
@@ -49,6 +50,7 @@ const Projects = () => {
                             })
                         }
                     </div>
+                    <TestComp />
                 </div>
             </div>
         </div>
@@ -56,3 +58,41 @@ const Projects = () => {
 }
 
 export default Projects
+
+const TestComp = () => {
+    return (
+        <section id='PageTurner'>
+            <div className='imgLoader'></div>
+
+            <div className='container'>
+
+                <div className='book'>
+                    <div className='gap'></div>
+                    <div className='pages'>
+                        <div className='page'></div>
+                        <div className='page'></div>
+                        <div className='page'></div>
+                        <div className='page'></div>
+                        <div className='page'></div>
+                        <div className='page'></div>
+                    </div>
+                    <div className='flips'>
+                        <div className='flip flip1'>
+                            <div className='flip flip2'>
+                                <div className='flip flip3'>
+                                    <div className='flip flip4'>
+                                        <div className='flip flip5'>
+                                            <div className='flip flip6'>
+                                                <div className='flip flip7'></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}

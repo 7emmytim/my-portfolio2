@@ -6,12 +6,9 @@ export const _experience = [
         duration: 'Jan 2021 - Present',
         job_title: 'Frontend Developer',
         duties: [
-            { id: '1', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '2', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '3', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '4', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '5', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '6', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
+            { id: '1', content: 'Worked with a team of backend developers, designers, another frontend developer and product manager to rebuild the company\'s web trading platform (COMX).' },
+            { id: '2', content: 'Implemented designs from figma and backend APIs to build an highly performant in-house admin platform.' },
+            { id: '3', content: 'Developed the interface for the company\'s loan module' }
         ]
     },
     {
@@ -21,12 +18,7 @@ export const _experience = [
         duration: 'Mar 2022',
         job_title: 'Integration Engineer',
         duties: [
-            { id: '1', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '2', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '3', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '4', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '5', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '6', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
+            { id: '1', content: 'Worked with the provided figma designs and API keys to develop, test, and document a checkout page.' }
         ]
     },
     {
@@ -36,12 +28,8 @@ export const _experience = [
         duration: 'Nov 2019 - Dec 2020',
         job_title: 'Web Developer',
         duties: [
-            { id: '1', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '2', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '3', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '4', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '5', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
-            { id: '6', content: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document' },
+            { id: '1', content: 'Worked with experienced developers to create in-house solutions' },
+            { id: '2', content: 'Taught technical skills to provide students with the competence to become skilled in web development' }
         ]
     }
 ]
