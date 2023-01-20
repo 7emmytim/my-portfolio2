@@ -27,7 +27,7 @@ const Header = () => {
                 {
                     expanded ? <BiDoorOpen className='text-white h-6 w-6 cursor-pointer' onClick={handleToggle} />
                         :
-                        <ul className='fixed sm:static right-0 top-0 bg-[#242639] space-y-4 sm:space-y-0 py-6 sm:py-0 sm:bg-transparent z-20 h-fit w-full sm:w-fit block text-center sm:flex items-center gap-8 text-white'>
+                        <ul className='static right-0 top-0 bg-[#242639] space-y-4 sm:space-y-0 py-6 sm:py-0 sm:bg-transparent z-20 h-fit w-full sm:w-fit block text-center sm:flex items-center gap-8 text-white'>
                             <li><Link href='/'>Home</Link></li>
                             <li><Link href='/projects'>Projects</Link></li>
                             <li><Link href='/blog'>Blog</Link></li>

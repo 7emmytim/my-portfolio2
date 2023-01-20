@@ -72,7 +72,7 @@ const Banner = () => {
     const handleMixpanelFn = () => mixpanel.track('CV_DOWNLOADED')
 
     return (
-        <div className='bg-[#242639] min-h-screen sm:flex py-28 sm:py-20 items-center'>
+        <div className='bg-[#242639] sm:min-h-screen sm:flex pt-28 sm:py-20 items-center'>
             <div className='container grid sm:grid-cols-2 gap-10 w-2/3 items-center'>
                 <div className='space-y-8'>
                     <div className='flex items-center gap-4 sm:gap-4'>
